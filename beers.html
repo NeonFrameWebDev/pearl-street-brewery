@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Beer Lineup, Pearl Street Brewery, La Crosse WI</title>
+<meta name="description" content="Twenty-plus beers on tap at Pearl Street Brewery in La Crosse, Wisconsin. Year-round flagships, rotating IPAs, stouts, lagers, and seasonal releases.">
+<link rel="icon" type="image/jpeg" href="images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="is-beers">
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand" aria-label="Pearl Street Brewery home">
+      <span class="nav__wordmark">PEARL STREET</span>
+      <span class="nav__tag">Brewery &middot; La Crosse WI</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="beers.html" class="active">Beers</a>
+      <a href="about.html">About</a>
+      <a href="visit.html" class="nav__cta">Visit</a>
+    </nav>
+    <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<section class="hero hero--compact" id="hero">
+  <div class="hero__bg" style="background-image: url('images/beer_taps.jpg')" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <p class="eyebrow eyebrow--amber">On Tap</p>
+    <h1 class="hero__headline">Twenty-plus reasons to stop by.</h1>
+    <p class="hero__sub">Year-round flagships. Rotating IPAs. Stouts, lagers, and seasonals that show up when they show up.</p>
+  </div>
+</section>
+
+<section class="section section--cream" id="lineup">
+  <div class="section__inner">
+
+    <div class="filters" role="tablist" aria-label="Filter beer lineup">
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="year-round">Year Round</button>
+      <button class="filter-pill" data-filter="ipa">IPA</button>
+      <button class="filter-pill" data-filter="stout">Stout &amp; Porter</button>
+      <button class="filter-pill" data-filter="lager">Lager &amp; Wheat</button>
+      <button class="filter-pill" data-filter="rotating">Rotating</button>
+    </div>
+
+    <div class="beer-flight" data-beer-grid>
+
+      <article class="beer rise" data-tags="year-round">
+        <div class="beer__img"><img src="images/beer_dtb_brown_ale.jpeg" alt="D.T.B. Brown Ale label" loading="lazy"></div>
+        <div class="beer__body">
+          <p class="beer__cat">Year Round</p>
+          <h3>D.T.B. Brown Ale</h3>
+          <p class="beer__style">American Brown Ale</p>
+          <p class="beer__notes">Soft toasted malt, gentle nut and chocolate. The flagship that put Pearl Street on the national map.</p>
+          <div class="beer__foot">
+            <span class="beer__abv">5.0% ABV</span>
+            <span class="beer__badge">Gold 2003 + 2012</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="beer rise" data-tags="year-round">
+        <div class="beer__img"><img src="images/beer_pearl_street_pale.jpeg" alt="Pearl Street Pale Ale label" loading="lazy"></div>
+        <div class="beer__body">
+          <p class="beer__cat">Year Round</p>
+          <h3>Pearl Street Pale Ale</h3>
+          <p class="beer__style">American Pale Ale</p>
+          <p class="beer__notes">Bright Cascade hop and a clean malt finish. The benchmark pale, and the one we pour for friends.</p>
+          <div class="beer__foot">
+            <span class="beer__abv">5.5% ABV</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="beer rise" data-tags="year-round ipa">
+        <div class="beer__img"><img src="images/beer_linalool_ipa.jpeg" alt="Linalool IPA label" loading="lazy"></div>
+        <div class="beer__body">
+          <p class="beer__cat">Year Round &middot; IPA</p>
+          <h3>Linalool IPA</h3>
+          <p class="beer__style">India Pale Ale</p>
+          <p class="beer__notes">Citra and Mosaic forward, juicy and bright, with just enough bite. Our most-grabbed six-pack.</p>
+          <div class="beer__foot">
+            <span class="beer__abv">6.5% ABV</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="beer rise" data-tags="year-round lager">
+        <div class="beer__img"><img src="images/beer_shitty_lyte.jpeg" alt="Shitty Lyte Beer label" loading="lazy"></div>
+        <div class="beer__body">
+          <p class="beer__cat">Year Round &middot; Lager</p>
+          <h3>Shitty Lyte Beer</h3>
+          <p class="beer__style">American Light Lager</p>
+          <p class="beer__notes">Local malt, fresh ingredients, unpasteurized. A craft light lager that earned the name on purpose.</p>
+          <div class="beer__foot">
+            <span class="beer__abv">4.2% ABV</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="beer rise" data-tags="year-round lager">
+        <div class="beer__img"><img src="images/beer_el_hefe.jpeg" alt="El Hefe label" loading="lazy"></div>
+        <div class="beer__body">
+          <p class="beer__cat">Year Round &middot; Wheat</p>
+          <h3>El Hefe</h3>
+          <p class="beer__style">Bavarian Hefeweizen</p>
+          <p class="beer__notes">Banana and clove from a true German wheat yeast. Hazy by design, refreshing by intention.</p>
+          <div class="beer__foot">
+            <span class="beer__abv">5.0% ABV</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="beer rise" data-tags="year-round stout">
+        <div class="beer__img"><img src="images/beer_java_lava.jpeg" alt="Java Lava Coffee Stout label" loading="lazy"></div>
+        <div class="beer__body">
+          <p class="beer__cat">Year Round &middot; Stout</p>
+          <h3>Java Lava</h3>
+          <p class="beer__style">Coffee Stout</p>
+          <p class="beer__notes">Roasted malt and a generous pour of cold-brewed local coffee. Built for slow weekends.</p>
+          <div class="beer__foot">
+            <span class="beer__abv">6.0% ABV</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="beer rise" data-tags="year-round stout">
+        <div class="beer__img"><img src="images/beer_thats_what.jpeg" alt="That's What I'm Talkin Bout Organic Rolled Oat Stout label" loading="lazy"></div>
+        <div class="beer__body">
+          <p class="beer__cat">Year Round &middot; Stout</p>
+          <h3>That's What I'm Talkin' 'Bout</h3>
+          <p class="beer__style">Organic Rolled Oat Stout</p>
+          <p class="beer__notes">Smooth, silky, fully organic. Rolled oats give it the body, the malt does the rest.</p>
+          <div class="beer__foot">
+            <span class="beer__abv">5.0% ABV</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="beer rise" data-tags="rotating ipa">
+        <div class="beer__img"><img src="images/beer_me_myself_ipa.jpeg" alt="Me Myself and IPA label" loading="lazy"></div>
+        <div class="beer__body">
+          <p class="beer__cat">Rotating &middot; IPA</p>
+          <h3>Me, Myself &amp; IPA</h3>
+          <p class="beer__style">India Pale Ale</p>
+          <p class="beer__notes">A crushable IPA built for solo evenings on the porch. Pine, citrus, and a clean finish.</p>
+          <div class="beer__foot">
+            <span class="beer__abv">6.5% ABV</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="beer rise" data-tags="rotating ipa">
+        <div class="beer__img"><img src="images/beer_dankenstein.jpeg" alt="Dankenstein label" loading="lazy"></div>
+        <div class="beer__body">
+          <p class="beer__cat">Rotating &middot; IPA</p>
+          <h3>Dankenstein</h3>
+          <p class="beer__style">Imperial IPA</p>
+          <p class="beer__notes">Big, dank, hop-forward. A monster of an IPA stitched together from our favorite resinous parts.</p>
+          <div class="beer__foot">
+            <span class="beer__abv">8.5% ABV</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="beer rise" data-tags="rotating ipa">
+        <div class="beer__img"><img src="images/beer_rumpshaker.jpeg" alt="Rumpshaker NEIPA label" loading="lazy"></div>
+        <div class="beer__body">
+          <p class="beer__cat">Rotating &middot; IPA</p>
+          <h3>Rumpshaker NEIPA</h3>
+          <p class="beer__style">New England IPA</p>
+          <p class="beer__notes">Hazy, juicy, soft on the palate. Built around the hops that make modern IPAs go.</p>
+          <div class="beer__foot">
+            <span class="beer__abv">5.7% ABV</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="beer rise" data-tags="rotating stout">
+        <div class="beer__img"><img src="images/beer_smokin_hemp.jpeg" alt="Smokin Hemp Porter label" loading="lazy"></div>
+        <div class="beer__body">
+          <p class="beer__cat">Rotating &middot; Porter</p>
+          <h3>Smokin Hemp Porter</h3>
+          <p class="beer__style">Smoked Porter</p>
+          <p class="beer__notes">Toasted malt, a wisp of campfire smoke, and a touch of hemp seed for body. Strange and beloved.</p>
+          <div class="beer__foot">
+            <span class="beer__abv">6.0% ABV</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="beer rise" data-tags="rotating stout">
+        <div class="beer__img"><img src="images/beer_breakfast_beer.jpeg" alt="Breakfast Beer label" loading="lazy"></div>
+        <div class="beer__body">
+          <p class="beer__cat">Rotating &middot; Stout</p>
+          <h3>Breakfast Beer</h3>
+          <p class="beer__style">Breakfast Stout</p>
+          <p class="beer__notes">Coffee, oats, and the kind of body that makes Saturday mornings honest. Limited release.</p>
+          <div class="beer__foot">
+            <span class="beer__abv">7.0% ABV</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p style="text-align:center; max-width: 640px; margin: 3rem auto 0; color: var(--ink-soft);">
+      Plus a rotating list of seasonal one-offs and experiments we pour straight from the bar. The full draft list lives on the chalkboard inside.
+    </p>
+
+  </div>
+</section>
+
+<section class="visit-band rise" id="find-our-beer">
+  <p class="eyebrow eyebrow--amber">Find Our Beer</p>
+  <h2>In our taproom, and at Woodman's across Wisconsin.</h2>
+  <p>The full draft lineup pours daily inside the boot factory. Cans and bottles of our flagships sit on the shelf at every Woodman's in the state.</p>
+  <a href="visit.html" class="btn btn--amber btn--lg">Visit the Taproom</a>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__inner">
+    <span class="foot__brand">PEARL STREET</span>
+    <p class="foot__sub">Brewery &middot; La Crosse Wisconsin</p>
+    <p class="foot__tag">Hand-crafted in La Crosse since 1999</p>
+    <div class="foot__social">
+      <a href="https://www.instagram.com/pearlstreetbrew/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/pages/Pearl-Street-Brewery/2075615409382117" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://untappd.com/pearlstreetbrewery" target="_blank" rel="noopener">Untappd</a>
+      <a href="https://pearl-street-brewery.myshopify.com/" target="_blank" rel="noopener">Shop</a>
+    </div>
+    <p class="foot__copy">&copy; 2026 Pearl Street Brewery. All rights reserved.</p>
+    <p class="foot__credit">Site by <a href="https://neonframewebdesign.com" target="_blank" rel="noopener">NeonFrame Web Design</a></p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
