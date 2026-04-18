@@ -6,10 +6,12 @@
 <title>The Beer Lineup, Pearl Street Brewery, La Crosse WI</title>
 <meta name="description" content="Twenty-plus beers on tap at Pearl Street Brewery in La Crosse, Wisconsin. Year-round flagships, rotating IPAs, stouts, lagers, and seasonal releases.">
 <link rel="icon" type="image/jpeg" href="images/logo.jpg">
-<link rel="preload" as="image" href="images/beer_taps.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="images/beer_taps.webp" fetchpriority="high" type="image/webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&family=Caveat&family=IBM+Plex+Mono:wght@400;500&display=swap" as="style">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&family=Caveat&family=IBM+Plex+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&family=Caveat&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="is-beers">
@@ -35,7 +37,7 @@
 <main>
 
 <section class="hero hero--compact" id="hero">
-  <div class="hero__bg" style="background-image: url('images/beer_taps.jpg')" aria-hidden="true"></div>
+  <div class="hero__bg" style="background-image: url('images/beer_taps.webp')" aria-hidden="true"></div>
   <div class="hero__inner">
     <p class="eyebrow eyebrow--amber">On Tap</p>
     <h1 class="hero__headline">Twenty-plus reasons to stop by.</h1>
